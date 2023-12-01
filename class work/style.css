@@ -1,0 +1,101 @@
+
+*{
+margin:0 ;
+padding:0 ;
+}
+
+.container{
+height:100vh ;
+width:100% ;
+background-image:url(images/kk.png);
+background-position:center;
+background-size: cover;
+padding: left 5%; 
+padding: right 5%; 
+box-sizing:border-box ;
+position: relative;
+}
+.navbar{
+height:15vh ;
+width:100% ;
+margin:auto ;
+display:flex;
+align-items:center;
+}
+
+nav{
+    flex:1 ;
+    padding: left 60px; ;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style:none ;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: bisque;
+}
+.content h1{
+font-size: 60px;
+ font-weight:100 ;
+margin-top: 24px;
+margin-bottom: 15px;
+color: darkgoldenrod;
+}
+
+.content p{
+   font-size:20px ; 
+   color: black;
+
+}
+.content{
+    margin-top:  10%; 
+    margin-left: 10%;
+}
+
+.social-links{
+    transform:rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom:180px ;
+
+}
+.social-links a{
+text-decoration: none;
+color: black;
+padding-right: 20px;
+font-size: 14px;
+}
+
+.marquee{
+    width:80vw ;
+    height:20vh ;
+background-color:transparent;
+color:black;
+overflow: hidden;
+
+}
+
+.marquee-content{
+list-style: none;
+height: 100%;
+display: flex;
+animation: scrolling 30s linear infinite;
+}
+@keyframes scrolling {
+    0% {transform:translatex(80vw) ;}
+    {transform:translatex(-180vw) ;}
+}
+.marquee-content li{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+width: 20vw;
+flex: shrink 0;
+white-space:nowrap ;
+}
+
